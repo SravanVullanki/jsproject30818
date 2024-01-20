@@ -1,0 +1,48 @@
+<html>
+<head>
+    <title> JAVASCRIPT</title>
+<script>
+//template literal
+//''(Back tick)
+const name="klef" 
+document.writeln(`<b>Hi ${name}</b>`)
+
+//spread operator--used to make our object iterable or used to merge two arrays(...--is the operator)
+const a=[10,23,45,56]
+const b=[...a,30,40]
+document.writeln("</br>")
+document.writeln("a= "+a+"</br>")
+document.writeln("b= "+b+"</br>")
+const x=[12,13,45,56]
+const y=[57,23,90,32]
+const z= [...x,...y]
+document.writeln("x= "+x+"</br>")
+document.writeln("y= "+y+"</br>")
+document.writeln("z= "+z+"</br>")
+
+const v1= "kluniversity"
+const v2 = [...v1]
+document.writeln("v1="+v1+"</br>")
+document.writeln("v2="+v2+"</br>")
+
+//destructuring assignment
+const names = [10,"mswd","sdp",20]
+document.writeln("Names="+names+"</br>")
+document.writeln("Length="+names.length+"</br>")
+const [i,j,k,l] = names
+document.writeln("i= "+i+"</br>")
+document.writeln("j= "+j+"</br>")
+document.writeln("k= "+k+"</br>")
+document.writeln("l= "+l+"</br>")
+const [p,q]=names
+document.writeln("p= "+p+"</br>")
+document.writeln("q= "+q+"</br>")
+
+const [m,,,n]= names
+document.writeln(m+"</br>")
+document.writeln(n+"</br>")
+</script>     
+</head>
+<body>
+</body>
+</html>

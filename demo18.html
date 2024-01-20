@@ -1,0 +1,62 @@
+<html>
+<head>
+
+    <title> JAVASCRIPT</title>
+    <script>
+      //Arrays
+      document.writeln("<br><u>Demo on Arrays</u></br>")
+      const s = [34,67,89]// same type of elements
+      document.writeln(s+"</br")
+      document.writeln(typeof(s)+"</br>")
+      document.writeln(s.length+"</br>")
+      document.writeln(s[0]+"</br>")
+      document.writeln(s[2]+"</br>")
+      document.writeln(s[5]+"</br>")
+      document.writeln(typeof(s[1])+"</br>")
+      s[1]=50
+      s[2]="cse"
+      document.writeln(s+"</br>")
+      s.push("MSWD")
+      s.push(100)
+      document.writeln(s+"</br")
+      document.writeln(s.length+"</br>")
+      s.pop()
+      document.writeln(s+"</br")
+      document.writeln(s.length+"</br>")
+      s[10]="cse"
+      document.writeln(s+"</br")
+      document.writeln(s.length+"</br>")
+      document.writeln(s.reverse()+"</br>")//We cant do the reverse physically to the array as it is const
+      document.writeln(s.sort()+"</br>")
+      let element = s.shift()
+      document.writeln(element+"</br>")
+      document.writeln("Array After Shifting = "+s+"</br>")
+      const len = s.unshift(100.789)
+      document.writeln("Modification after unshift operation = "+s+"</br>")
+      document.writeln("Array length is = "+len+"</br>")
+      let len1=s.unshift("aws",44,"pfsd")
+      document.writeln("Array length after adding 2  = "+len1+"</br>")
+      document.writeln(s+"</br")
+      document.writeln("<u>Display Array Elements using for loop</u></br>")
+      for(let i=0;i<s.length;i++)
+      {
+        document.writeln(s[i]+"</br>")
+      }
+      document.writeln("<u>Display Array Elements using for in loop</u></br>")
+      for(let i in s)
+      {
+        document.writeln(s[i]+"</br>")
+      }
+      document.writeln("<u>Display Array Elements using for of loop</u></br>")
+      for(let element of s)
+      {
+        document.writeln(element+"</br>")
+      }
+    </script> 
+    
+</head>
+
+<body>
+
+</body>
+</html>

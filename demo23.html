@@ -1,0 +1,44 @@
+<html>
+<head>
+    <title> JAVASCRIPT</title>
+<script>
+      //to demonstrate var let and const
+function demo1()
+{
+  document.writeln("I Am In Demo 1</br>")
+  {
+    var a=10
+    document.writeln("Inside the block</br>")
+    document.writeln("a="+a+"</br>")
+  }
+  document.writeln("a="+a+"</br>")
+}
+function demo2()
+{
+  document.writeln("I Am In Demo 2</br>")
+  {
+    let a=10
+    document.writeln("Inside the block</br>")
+    document.writeln("a="+a+"</br>")
+  }
+  document.writeln("a="+a+"</br>")//a is undefined as let is block scope 
+} 
+function demo3()
+{
+  document.writeln("I Am In Demo 3</br>")
+  {
+    const a=10
+    // a=20 reassignment is not possible for const type
+    document.writeln("Inside the block</br>")
+    document.writeln("a="+a+"</br>")
+  }
+  document.writeln("a="+a+"</br>")
+}       
+// demo1()
+// demo2()
+// demo3()
+</script>     
+</head>
+<body>
+</body>
+</html>
