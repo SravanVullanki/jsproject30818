@@ -1,0 +1,65 @@
+/* Navbar container */
+nav {
+  background-color: #000000; /* Black background */
+  padding: 10px 20px; /* Add padding to the navbar */
+}
+
+/* Navbar list */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar list items */
+li {
+  display: inline;
+  margin-right: 20px; /* Increase the spacing between navbar items */
+}
+
+/* Navbar links */
+li a {
+  display: inline-block;
+  padding: 10px;
+  color: #ffffff; /* White text color */
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+  font-weight: bold; /* Make the text bold */
+}
+
+/* Navbar links hover effect */
+li a:hover {
+  color: #ffd700; /* Change text color on hover to gold */
+}
+
+/* Active link */
+li a.active {
+  color: #ffd700; /* Highlight active link with gold color */
+}
+
+/* Animation for navbar links */
+li a::before {
+  content: '';
+  position: absolute;
+  bottom: -2px; /* Move the animation line slightly below the text */
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ffd700; /* Animation line color (gold) */
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+li a:hover::before,
+li a.active::before {
+  transform: scaleX(1);
+}
+
+/* Header styles */
+h1 {
+  text-align: center; /* Center align the header */
+  color: #000000; /* Black text color */
+  font-size: 24px; /* Set font size for the header */
+  margin-top: 20px; /* Add top margin to separate it from the navbar */
+}
